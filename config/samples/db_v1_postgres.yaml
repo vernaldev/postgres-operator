@@ -1,0 +1,12 @@
+apiVersion: db.example.com/v1
+kind: Postgres
+metadata:
+  labels:
+    app.kubernetes.io/name: postgres
+    app.kubernetes.io/instance: postgres-sample
+    app.kubernetes.io/part-of: postgres-operator
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/created-by: postgres-operator
+  name: postgres-sample
+spec:
+  # TODO(user): Add fields here
